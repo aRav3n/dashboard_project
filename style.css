@@ -10,12 +10,31 @@ body {
 
 body > div {
     display: grid;
+    padding: 3vh 3vw 3vh 3vw;
+}
+
+button[class=search] {
+    background-color: #ffffff00;
+    border: none;
+    font-size: 1.25rem;
 }
 
 #content {
     background-color: #d5e2dd;
     grid-template-columns: 2 / -1;
     grid-template-rows: 2 / -1;
+}
+
+form {
+    display: flex;
+}
+
+input[type=search] {
+    background-color: #cfd8d3;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    height: 1.5rem;
 }
 
 #sidebar {
