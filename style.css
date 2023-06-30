@@ -26,6 +26,7 @@ button[class=search] {
 }
 
 form {
+    align-items: center;
     display: flex;
 }
 
@@ -48,4 +49,9 @@ input[type=search] {
     color: #022c22;
     grid-template-columns: 2 / -1;
     grid-template-rows: 1;
+}
+
+#top > div {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
