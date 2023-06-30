@@ -61,8 +61,25 @@ p {
 
 #sidebar {
     background-color: #2bc88e;
+    display: grid;
     grid-column: 1;
     grid-row: 1 / -1;
+}
+
+#sidebar * {
+    color: white;
+    font-weight: bold;
+}
+
+#sidebar > ul,
+#sidebar > ul > li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar > ul {
+    display: grid;
 }
 
 #top {
