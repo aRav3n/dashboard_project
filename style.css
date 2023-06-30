@@ -25,15 +25,11 @@ button[class=search] {
     grid-template-rows: 2 / -1;
 }
 
-form {
-    align-items: center;
-    display: flex;
-}
-
 input[type=search] {
     background-color: #cfd8d3;
     border: none;
     border-radius: 0.75rem;
+    flex-grow: 1;
     font-size: 1rem;
     height: 1.5rem;
 }
@@ -47,11 +43,39 @@ input[type=search] {
 #top {
     background-color: #ecfdf5;
     color: #022c22;
-    grid-template-columns: 2 / -1;
-    grid-template-rows: 1;
+    display: grid;
+    grid-column: 2 / -1;
+    grid-row: 1;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 2fr;
 }
 
-#top > div {
-    display: grid;
-    grid-template-rows: 1fr 2fr;
+#top > form {
+    display: flex;
+}
+
+#top  > div {
+    justify-content: end;
+}
+
+#top > div,
+#top > form {
+    align-items: center;
+    display: flex;
+    gap: 2vw;
+}
+
+#top > div > img {
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 2rem;
+}
+
+#un-small {
+    font-size: 1.25rem;
+}
+
+.username {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
 }
