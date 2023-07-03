@@ -63,7 +63,7 @@ p {
     background-color: #2bc88e;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 8vh;
     grid-column: 1;
     grid-row: 1 / -1;
 }
@@ -73,11 +73,15 @@ p {
     font-weight: bold;
 }
 
+#sidebar img[src$='.svg'] {
+    filter: invert(1);
+}
+
 #sidebar > span {
     align-items: center;
     display: flex;
     font-size: 1.75rem;
-    gap: .5rem;
+    gap: 2vw;
 }
 
 #sidebar > span > img {
@@ -86,7 +90,7 @@ p {
 
 #sidebar > ul {
     display: grid;
-    gap: .75rem;
+    gap: 3vh;
 }
 
 #sidebar > ul,
@@ -99,7 +103,7 @@ p {
 #sidebar > ul > li {
     align-items: center;
     display: flex;
-    gap: .5rem;
+    gap: 2vw;
 }
 
 #sidebar > ul > li > img {
