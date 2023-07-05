@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'ysabeau_infantbold';
+    src: url('fonts/ysabeauinfant-variablefont_wght-webfont.woff2') format('woff2'),
+        url('fonts/ysabeauinfant-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'ysabeau_infantbold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
